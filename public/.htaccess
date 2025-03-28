@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteRule ^assets/(.*)$ assets/$1 [L]
+
+RewriteCond ${REQUEST_FILENAME} !-f
+RewriteCond ${REQUEST_FILENAME} !-d
+
+RewriteBase /homapon_health_center/public/
+
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]

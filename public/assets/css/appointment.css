@@ -1,0 +1,162 @@
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+h2 {
+    color: #2A3D66;
+    /* Dark Blue */
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.table {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 25px;
+}
+
+/* Custom Blue Button for Health Personnel Schedule */
+.btn-schedule {
+    background-color: #007bff;
+    /* Blue */
+    border: none;
+    color: white;
+}
+
+.btn-schedule:hover {
+    background-color: #0056b3;
+    /* Darker Blue */
+    transform: scale(1.05);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    /* Red */
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #F0E999;
+    /* Light Yellow */
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #E0D26B;
+    transform: scale(1.05);
+}
+
+.btn-success {
+    background-color: #28a745;
+    /* Green */
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* Custom Yellow Button for Back to Dashboard */
+.btn-back-dashboard {
+    background-color: #F0E999;
+    /* Light Yellow */
+    border: none;
+}
+
+.btn-back-dashboard:hover {
+    background-color: #E0D26B;
+    /* Darker Yellow */
+    transform: scale(1.05);
+}
+
+.table th,
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.form-control,
+.btn {
+    border-radius: 8px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #2A3D66;
+    /* Dark Blue for form labels */
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin-top: 20px;
+    }
+}

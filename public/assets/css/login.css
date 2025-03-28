@@ -1,0 +1,153 @@
+body {
+    /* background: url('http://homapon_health_center/public/assets/img/background.jpg'); */
+    /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    /* Dark Gray Text */
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+.login-card {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    /* White background for card */
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    display: block;
+    margin: 0 auto 20px;
+    opacity: 0;
+    animation: logoFadeIn 1.5s 0.5s forwards;
+}
+
+.clinic-name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2A3D66;
+    /* Dark Blue for clinic name */
+    opacity: 0;
+    animation: textSlideIn 1.5s 1s forwards;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #2A3D66;
+    /* Dark Blue for form labels */
+}
+
+.input-group-text {
+    background-color: #fff;
+    border-left: 0;
+    cursor: pointer;
+}
+
+.btn {
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 10px 20px;
+}
+
+.btn-appointment,
+.btn-primary {
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Padding for a more rectangular shape */
+}
+
+.btn-appointment {
+    background-color: #F0E999;
+    /* Light yellow color */
+    border: none;
+    color: #333;
+    /* Dark text for contrast */
+}
+
+.btn-appointment:hover {
+    background-color: #E0D26B;
+    /* Slightly darker yellow on hover */
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #2A3D66;
+    /* Dark Blue */
+    border: none;
+    color: #fff;
+    /* White text */
+}
+
+.btn-primary:hover {
+    background-color: #1f2a44;
+    /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+.alert-danger {
+    margin-bottom: 20px;
+    background-color: #fff;
+    /* White background */
+    color: #D9534F;
+    /* Red color for error */
+    border: 1px solid #D9534F;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #007BFF;
+    /* Blue color for the link */
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes logoFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
